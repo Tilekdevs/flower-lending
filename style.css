@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Forum';
+}
+body {
+  background: #3b181e;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.button {
+  margin-top: 80px;
+  background-color: transparent;
+  padding: 19px 30px;
+  border: 1px solid white;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header {
+  position: absolute;
+  top: 87px;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  gap: 60px;
+}
+.header__link {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 6%;
+  font-size: 20px;
+}
+.header__text {
+  font-size: 20px;
+  letter-spacing: 6%;
+  color: white;
+}
+
+/* Intro */
+
+.intro {
+  background: url('./img/intro.jpg') no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+.intro__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.intro__title {
+  font-size: 120px;
+  letter-spacing: 9%;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+.intro__blur {
+  position: relative;
+  bottom: 75px;
+  height: 75px;
+  background: linear-gradient(transparent, #3b181e);
+}
+/* Catalog */
+
+.catalog {
+  margin-top: 172px;
+}
+.catalog > .container {
+  max-width: 1700px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+.line {
+  width: 85px;
+  height: 2px;
+  background: white;
+  margin: 30px auto 94px auto;
+}
+.catalog__box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.catalog__card {
+  width: 350px;
+  border: 1px solid gray;
+  padding: 10px;
+  position: relative;
+}
+.catalog__card-title {
+  letter-spacing: 4px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.catalog__btn {
+  margin-top: 30px;
+  font-size: 12px;
+  letter-spacing: 4px;
+  line-height: 14px;
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+.catalog__card::before {
+  content: '01 _____';
+  position: absolute;
+  color: white;
+  top: 50px;
+  left: 30px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.catalog__box:first-child > .catalog__card:nth-child(2)::before {
+  content: '02 ______';
+}
+.catalog__box:nth-child(2) > .catalog__card:nth-child(1)::before {
+  content: '03 ______';
+}
+.catalog__box:nth-child(3) > .catalog__card:nth-child(1)::before {
+  content: '04 ______';
+}
+.catalog__box:nth-child(3) > .catalog__card:nth-child(2)::before {
+  content: '05 ______';
+}
+.catalog__box:nth-child(4) > .catalog__card:nth-child(1)::before {
+  content: '06 ______';
+}
+.catalog__box:nth-child(4) > .catalog__card:nth-child(2)::before {
+  content: '07 ______';
+}
+.catalog__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+/* Action */
+.action {
+  margin-top: 100px;
+}
+.action__title {
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+  color: white;
+}
+.action__line {
+  width: 85px;
+  height: 2px;
+  background-color: white;
+}
+.action__text {
+  font-size: 18px;
+  line-height: 30px;
+  color: white;
+}
+.action__btn {
+  width: 220px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid white;
+  font-size: 12px;
+  letter-spacing: 15%;
+  color: white;
+  text-transform: uppercase;
+}
+.action__content {
+  display: flex;
+  gap: 94px;
+  align-items: center;
+}
+.action__left {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+.action__right {
+  position: relative;
+}
+.action__right::before {
+  content: '';
+  position: absolute;
+  width: 697px;
+  height: 410px;
+  border: 1px solid gray;
+  top: 22px;
+  left: 27px;
+}
+.action__gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 123px);
+  grid-template-rows: 123px;
+  gap: 20px;
+}
+.action__gallery > img {
+  width: 123px;
+  height: 123px;
+}
+.action__right.second::before {
+  width: 1000px;
+  height: 800px;
+}
+
+.present__card {
+  width: 420px;
+}
+.present__card-box {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 264px;
+}
+.present__card-box > div {
+  color: white;
+}
